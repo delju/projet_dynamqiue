@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+    <!-- contact us start-->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-us-content p-4">
+                        <h1 class="pt-3">Salut, comment puis-je t'aider?</h1>
+                        <p class="pt-3 pb-5"> </div>
+                </div>
+                <div class="col-md-6">
+                    <form action="#">
+                        <fieldset class="p-4">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-lg-6 py-2">
+                                        <input type="text" placeholder="User *" class="form-control" required>
+                                    </div>
+                                    <div class="col-lg-6 pt-2">
+                                        <input type="text" placeholder="Title *" class="form-control" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <select name="" id="" class="form-control w-100">
+                                <option selected>Select Category</option>
+                                <option value="1">Je ne trouve pas une série</option>
+                                <option value="1">Je ne trouve pas un tome</option>
+                                <option value="1">Problème technique</option>
+                                <option value="1">Il y a une erreur</option>
+                                <option value="1">Autre</option>
+                            </select>
+                            <textarea name="message" id=""  placeholder="Message *" class="border w-100 p-3 mt-3 mt-lg-4"></textarea>
+                            <div class="btn-grounp">
+                                <button type="submit" class="btn btn-primary mt-2 float-right">SUBMIT</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact us end -->
+
+{% endblock content %}
